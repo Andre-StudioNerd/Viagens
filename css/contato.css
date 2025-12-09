@@ -88,7 +88,7 @@ body {
 
 .form-contato .button:hover,
 .form-contato .button:focus {
-  background: #0077a3;
+  background: #000;
   outline: none;
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
