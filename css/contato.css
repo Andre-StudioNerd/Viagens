@@ -1,0 +1,125 @@
+:root {
+  --primary-color: #8f0101;
+  --secondary-color: #b81515;
+  --bg-color: #f4f4f4;
+  --text-color: #333;
+  --border-color: #ddd;
+  --radius: 10px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+  background-color: #f9f9f9;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-contato {
+  background: #fff;
+  padding: 25px;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-contato h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.form-contato label {
+  font-weight: 600;
+  color: var(--text-color);
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.form-contato input,
+.form-contato textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border-color);
+  font-size: 1rem;
+  outline: none;
+  margin-top: 5px;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(0, 82, 204, 0.15);
+}
+
+.form-contato textarea {
+  height: 140px;
+  resize: none;
+}
+
+.form-contato .button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: min(420px, 100%);
+  margin: 16px auto 0 auto;
+  padding: 12px 20px;
+  border-radius: var(--radius);
+  border: none;
+  background: var(--secondary-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background 0.12s ease;
+}
+
+.form-contato .button:hover,
+.form-contato .button:focus {
+  background: #0077a3;
+  outline: none;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.form-contato .button:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 900px) {
+  .form-contato {
+    padding: 20px;
+  }
+
+  .form-contato h2 {
+    font-size: 1.4rem;
+  }
+
+  .form-contato .button {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+@media (max-width: 360px) {
+  .form-contato {
+    padding: 18px;
+  }
+
+  .form-contato .button {
+    padding: 11px 14px;
+    font-size: 0.95rem;
+  }
+}
